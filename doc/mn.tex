@@ -53,6 +53,8 @@
 \def\vtr#1{{\bf #1}}
 \def\mtx#1{{\bf #1}}
 
+\def\lens{HST\,J135754.29$-$311509.1}
+
 % ==============================================================================
 
 \title%
@@ -127,12 +129,16 @@ gravitational lensing --- surveys --- cosmology: observations
 
 \begin{figure*}
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figs/.eps} 
-\caption{Predicted number density of lensing events $N$ per square degree as a function of the instrument angular resolution $\theta$/arcsec,
-for the fixed values of 
-    $\G=10^{-6}$ (dashed), 
-       $10^{-7}$ (dotted) and
-$5\times10^{-8}$ (solid).}\label{fig:bound}
+\begin{minipage}{0.48\linewidth}
+\centering\includegraphics[width=0.9\linewidth]{figs/HSTJ135754_29-311509_1_sci.eps} 
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\centering\includegraphics[width=0.9\linewidth]{figs/HSTJ135754_29-311509_1_sci_moffatdiff.eps} 
+\end{minipage}
+\caption{Left: HST image of gravitational lens \lens. Right:
+automatic lens-subtracted version of this image. Images from
+Marshall et al (in preparation).}
+\label{fig:example}
 \end{center}
 \end{figure*}
 

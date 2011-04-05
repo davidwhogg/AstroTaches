@@ -9,8 +9,28 @@
 # 
 # Cosmic Kochanek as example system: HSTJ135754.29-311509.1
 # 
-
+ grep HSTJ135754.29-311509.1 \
+   $WORK_DIR/stronglensing/HSTarchive/HAGGLeS/HAGGLeS-2009-09-16.v3.cat
+ 
+ # HSTJ135754.29-311509.1  GO  ACSJ135756-311640 robot  3.0 209.47622   -31.252541 
+#   bulge  UNIDENTIFIED;PARALLELFIELD  F475W F775W  22.3063  20.287  2.0193       
+#   NONE  -99  -99  -99  -99  -99  -99  -99
 # 
+
+# Resize jpg:
+convert -scale 200% examples/HSTJ135754_29-311509_1_sci.jpg test.jpg
+
+
+# Instruction text:
+
+Paint over the blue features in this image:
+
+# Footer text:
+
+Created at <a href="http://dotastronomy.com/2011-conference">Dot Astronomy
+3</a>, Oxford, April 2011. Unmodelled HST gravitational lens test image from
+Marshall et al, in preparation. Source code visible at <a
+href="https://github.com/hogghogg/AstroTaches">GitHub</a>.
 
 # ============================================================================
 FINISH:
