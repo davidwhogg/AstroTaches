@@ -17,9 +17,10 @@ function AstroTaches(inp){
 	this.cur = {x:0,y:0};
 	this.width;
 	this.height;
-	this.stroke = 10;
+	this.stroke = 12;
 	this.src;
 	this.holder = { id:'imageholder', img: 'imageholder_small' };
+	this.drawing = false;
 
 	// Overwrite defaults with variables passed to the function
 	if(typeof inp=="object"){
@@ -111,24 +112,25 @@ AstroTaches.prototype.loaded = function(){
 		this.wide = this.canvas.getAttribute("width");
 		this.tall = this.canvas.getAttribute("height");
 
-		$("#"+this.id).bind('click',{data:this},function(e){
-			// Capture the cursor position
-			var x = e.pageX - $(this).position().left - window.scrollX;
-			var y = e.pageY - $(this).position().top - window.scrollY;
-			$(e.data.data.canvas).css({cursor:'pointer'});
-		}).bind('mousemove',{data:this},function(e){
+		$("#"+this.id).bind('mousemove',{data:this},function(e){
 			// Capture the cursor position
 			// We don't need scrollX/scrollY as pageX/pageY seem to include this
-			var x = e.pageX - $(this).position().left;
-			var y = e.pageY - $(this).position().top;
+			this.x = e.pageX - $(this).position().left;
+			this.y = e.pageY - $(this).position().top;
 			// Drawing
-			//e.data.data.drawPixel(x,y);
-			e.data.data.drawStroke(x,y);
+			if(e.data.data.drawing){
+				e.data.data.paintPixel(this.x,this.y);
+			}
+			//e.data.data.drawStroke(x,y);
 		}).bind('mousedown',{data:this},function(e){
+			this.x = e.pageX - $(this).position().left - window.scrollX;
+			this.y = e.pageY - $(this).position().top - window.scrollY;
 			e.data.data.drawing = true;
+			e.data.data.paintPixel(this.x,this.y);
+			$(e.data.data.canvas).css({cursor:'pointer'});
 		}).bind('mouseup',{data:this},function(e){
 			e.data.data.drawing = false;
-			e.data.data.x = "";
+			$(e.data.data.canvas).css({cursor:'default'});
 		}).bind('mouseout',{data:this},function(e){
 			e.data.data.dragging = false;
 			e.data.data.mouseover = false;
@@ -169,12 +171,14 @@ AstroTaches.prototype.drawStroke = function(x,y){
 	this.ctx.closePath();
 }
 
-AstroTaches.prototype.drawPixel = function(x,y){
+AstroTaches.prototype.paintPixel = function(x,y){
 
 	var x_c = x-this.stroke/2;
 	var y_c = y-this.stroke/2;
-	var wide = this.stroke/2;
-	var tall = this.stroke/2;
+	var wide = this.stroke;
+	var tall = this.stroke;
+	var f = 0.2;
+	var oplimit = 150;
 
 	if(x_c < 0){
 		x_c = 0;
@@ -193,12 +197,17 @@ AstroTaches.prototype.drawPixel = function(x,y){
 
 			pos = (y*wide+x)*4;
 
-			this.imageData.data[pos] = 255;
-			this.imageData.data[pos+1] = 0;
-			this.imageData.data[pos+2] = 1;
-			this.imageData.data[pos+3] = 0xff; // alpha
+			this.imageData.data[pos] = 0;
+			this.imageData.data[pos+1] = 226;
+			this.imageData.data[pos+2] = 255;
+			op = this.imageData.data[pos+3]+10;
+			this.imageData.data[pos+3] = (op < oplimit) ? op : oplimit; // alpha
 	
 			this.ctx.putImageData(this.imageData, x_c, y_c);
 		}
 	}
+}
+
+AstroTaches.prototype.getImage = function(){
+	return this.ctx.getImageData(0, 0, this.wide, this.tall);
 }
