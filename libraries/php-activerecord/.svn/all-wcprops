@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord
+END
+ActiveRecord.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/ActiveRecord.php
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/LICENSE
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/.gitignore
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/CHANGELOG
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/README.md
+END

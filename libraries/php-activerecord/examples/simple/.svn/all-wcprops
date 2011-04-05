@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/examples/simple
+END
+simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/examples/simple/simple.php
+END
+simple_with_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/examples/simple/simple_with_options.php
+END
+simple.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/examples/simple/simple.sql
+END
+simple_with_options.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/examples/simple/simple_with_options.sql
+END

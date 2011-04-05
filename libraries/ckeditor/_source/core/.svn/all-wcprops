@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core
+END
+ckeditor.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/ckeditor.js
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/config.js
+END
+ckeditor_basic.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/ckeditor_basic.js
+END
+loader.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/loader.js
+END
+plugindefinition.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/plugindefinition.js
+END
+dataprocessor.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/dataprocessor.js
+END
+focusmanager.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/focusmanager.js
+END
+dtd.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/dtd.js
+END
+_bootstrap.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/_bootstrap.js
+END
+ui.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/ui.js
+END
+command.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/command.js
+END
+dom.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/dom.js
+END
+plugins.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/plugins.js
+END
+lang.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/lang.js
+END
+event.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/event.js
+END
+htmlparser.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser.js
+END
+resourcemanager.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/resourcemanager.js
+END
+ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/ajax.js
+END
+themes.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/themes.js
+END
+editor.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/editor.js
+END
+editor_basic.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/editor_basic.js
+END
+commanddefinition.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/commanddefinition.js
+END
+skins.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/skins.js
+END
+env.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/env.js
+END
+scriptloader.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/scriptloader.js
+END
+eventInfo.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/eventInfo.js
+END
+ckeditor_base.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/ckeditor_base.js
+END
+tools.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/tools.js
+END
+xml.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/xml.js
+END
