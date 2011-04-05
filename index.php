@@ -26,11 +26,12 @@ mysql_select_db('Summary', $db_sum);
 		<div id="logo">
 			<img src="graphics/Logo.png">
 		</div>
+		<h2>How useful are paintings of astronomical images?</h2><br>
 	</div>
 
 
 	<div id="sidebar">
-		This is a sidebar.
+		<h2>Paint over the blue features in this image:</h2>
 		<?php
 		// Login
 		if (!isset($_COOKIE["stache"])) {
@@ -58,7 +59,11 @@ mysql_select_db('Summary', $db_sum);
 	
 	<div id="clear">
 
+
 	<div id="footer">
-		This is the Footer
+		"Created at <a href="http://dotastronomy.com/2011-conference">Dot Astronomy
+		3</a>, Oxford, April 2011. Unmodelled HST gravitational lens test image from
+		Marshall et al, in preparation. Source code visible at <a
+		href="https://github.com/hogghogg/AstroTaches">GitHub</a>.
 	</div>
   </div>

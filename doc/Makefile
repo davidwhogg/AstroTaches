@@ -1,58 +1,22 @@
                                                                                                                                                                
-all: papers
+all: pdf
 
 clean:
-	-rm *.aux *.log *.dvi *.blg astrotaches.ps stringsearch.ps
+	-rm *.aux *.log *.dvi *.blg mn.p*
 
-papers: pdf
+pdf: mn.pdf
 
-paper1: astrotaches.pdf
+mn.bbl: mn.tex references.bib
+	bubble -f mn.tex references.bib
 
-paper2: stringsearch.pdf
+mn.dvi: clean mn.tex mn.bbl
+	latex mn.tex
+	latex mn.tex
+	latex mn.tex
 
-pdf: astrotaches.pdf stringsearch.pdf
+mn.ps: mn.dvi
+	\dvips -t a4 -o mn.ps mn.dvi
 
-ps: astrotaches.ps stringsearch.ps
+mn.pdf: mn.dvi
+	\dvipdf -sPAPERSIZE=a4 mn.dvi
 
-astrotaches.bbl: astrotaches.tex references.bib
-	bubble -f astrotaches.tex references.bib
-
-astrotaches.dvi: clean astrotaches.tex astrotaches.bbl
-	latex astrotaches.tex
-	latex astrotaches.tex
-	latex astrotaches.tex
-# 	bibtex astrotaches
-# 	latex astrotaches.tex
-# 	latex astrotaches.tex
-
-astrotaches.ps: astrotaches.dvi
-	\dvips -t a4 -o astrotaches.ps astrotaches.dvi
-
-astrotaches.pdf: astrotaches.ps
-	ps2pdf14 -dPDFsettings=/prepress astrotaches.ps &
-
-# stringsearch.pdf: clean stringsearch.tex
-#	bubble -f stringsearch.tex references.bib
-#	pdflatex stringsearch.tex
-#	pdflatex stringsearch.tex
-#	pdflatex stringsearch.tex
-#
-# stringsearch.ps: stringsearch.pdf
-#	pdf2ps stringsearch.pdf
-
-stringsearch.bbl: stringsearch.tex references.bib
-	bubble -f stringsearch.tex references.bib
-
-stringsearch.dvi: clean stringsearch.tex stringsearch.bbl
-	latex stringsearch.tex
-	latex stringsearch.tex
-	latex stringsearch.tex
-# 	bibtex stringsearch
-# 	latex stringsearch.tex
-# 	latex stringsearch.tex
-
-stringsearch.ps: stringsearch.dvi
-	\dvips -t a4 -o stringsearch.ps stringsearch.dvi
-
-stringsearch.pdf: stringsearch.ps
-	ps2pdf14 -dPDFsettings=/prepress stringsearch.ps &
