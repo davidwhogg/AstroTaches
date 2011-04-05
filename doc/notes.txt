@@ -1,0 +1,16 @@
+# ============================================================================
+# 2011-04-05 (Tuesday) 15:03 BST
+# 
+# Starting the AstroTaches project at dotastronomy3 - Hack Day!
+# 
+# Stuart Lowe: html5 
+# David Hogg: github, analysis
+# Phil Marshall: science system, analysis, documentation
+# 
+# Cosmic Kochanek as example system: HSTJ135754.29-311509.1
+# 
+
+# 
+
+# ============================================================================
+FINISH:
