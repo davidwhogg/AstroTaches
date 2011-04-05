@@ -218,7 +218,7 @@ AstroTaches.prototype.paintPixel = function(x,y){
 	}
 }
 
-AstroTaches.prototype.paintEraser = function(){
+AstroTaches.prototype.paintEraser = function(x,y){
 	var x_c = x-this.stroke/2;
 	var y_c = y-this.stroke/2;
 	var wide = this.stroke;
@@ -248,6 +248,14 @@ AstroTaches.prototype.paintEraser = function(){
 			this.ctx.putImageData(this.imageData, x_c, y_c);
 		}
 	}
+}
+
+AstroTaches.prototype.setEraser = function(){
+	this.eraser = true;
+}
+
+AstroTaches.prototype.setPaintbrush = function(){
+	this.eraser = false;
 }
 
 AstroTaches.prototype.getImage = function(){
