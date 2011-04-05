@@ -285,6 +285,7 @@ AstroTaches.prototype.getImage = function(){
 AstroTaches.prototype.save = function(){
 	im = this.getImage();
 	$("input[name='myscribbles']").val(im);
+	$("input[name='pixeldistance']").val(this.dx+this.dy);
 	$("input[name='maxopacity']").val(this.maxopacity);
 	return false;
 }
