@@ -21,7 +21,7 @@ function AstroTaches(inp){
 	this.src;
 	this.holder = { id:'imageholder', img: 'imageholder_small' };
 	this.drawing = false;
-	this.maxopacity = 100;	// Out of 255
+	this.maxopacity = 100;	// This should not be changed
 	this.opacitystep = 20;	// How much to change the opacity by (0-255)
 	this.dx = 0;
 	this.dy = 0;
@@ -143,7 +143,7 @@ AstroTaches.prototype.loaded = function(){
 			data.oldx = data.x;
 			data.oldy = data.y;
 			data.drawing = true;
-			data.paint(this.x,this.y);
+			data.paint(data.x,data.y);
 			$(e.data.data.canvas).css({cursor:'pointer'});
 		}).bind('mouseup',{data:this},function(e){
 			e.data.data.drawing = false;
@@ -155,6 +155,10 @@ AstroTaches.prototype.loaded = function(){
 		}).bind('mouseenter',{data:this},function(e){
 			e.data.data.mouseover = true;
 		});
+		$('#send').bind('submit',function(e){
+			scribble.save();
+			//e.preventDefault();
+		})
 		this.draw();
 	}
 }
@@ -162,11 +166,7 @@ AstroTaches.prototype.loaded = function(){
 AstroTaches.prototype.draw = function(){
 
 	if(this.canvas && this.canvas.getContext){ 
-		this.ctx.moveTo(0,0);
-		this.ctx.clearRect(0,0,this.wide,this.tall);
-		this.ctx.fillStyle = "rgba(0,0,0,0)";
-		this.ctx.fillRect(0,0,this.wide,this.tall);
-		this.ctx.fill();
+		this.clearImage();
 
 		// create a new batch of pixels with the same
 		// dimensions as the image:
@@ -258,8 +258,33 @@ AstroTaches.prototype.setPaintbrush = function(){
 	this.eraser = false;
 }
 
-AstroTaches.prototype.getImage = function(){
-	return this.ctx.getImageData(0, 0, this.wide, this.tall);
+AstroTaches.prototype.clearImage = function(){
+	this.ctx.moveTo(0,0);
+	this.ctx.clearRect(0,0,this.wide,this.tall);
+	this.ctx.fillStyle = "rgba(0,0,0,0)";
+	this.ctx.fillRect(0,0,this.wide,this.tall);
+	this.ctx.fill();
 }
 
+AstroTaches.prototype.getImage = function(){
+	img = this.ctx.getImageData(0, 0, this.wide, this.tall);
+	str = "";
+	i = 0;
+	for(x = 0 ; x < this.width ; x++){
+		for(y = 0 ; y < this.height ; y++){
+			// Calculate the image index
+			if(i == 0) i++;
+			else str += ",";
+			pos = (y*this.wide+x)*4;
+			str += (typeof img.data[pos+3]=="undefined") ? 0 : img.data[pos+3];
+		}
+	}
+	return str;
+}
 
+AstroTaches.prototype.save = function(){
+	im = this.getImage();
+	$("input[name='myscribbles']").val(im);
+	$("input[name='maxopacity']").val(this.maxopacity);
+	return false;
+}
