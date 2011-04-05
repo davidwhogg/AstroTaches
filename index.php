@@ -15,14 +15,17 @@ mysql_select_db('Summary', $db_sum);
 		   <script src="astrotaches.js" type="text/javascript"></script>
 		   <script>
 		   window.onload = function() {
-		       scribble = new AstroTaches({id:'AstroTaches'});
+		       //scribble = new AstroTaches({id:'AstroTaches'});
 		   }
 		   </script>
 </head>
 
 <body>
+  <div id="container">
 	<div id="header">
-		Welcome to Astrotaches. Header goes here.<br>
+		<div id="logo">
+			<img src="graphics/Logo.png">
+		</div>
 	</div>
 
 
@@ -40,15 +43,22 @@ mysql_select_db('Summary', $db_sum);
 	</div>
 
 	<div id="main">
-		This is the Canvas<br>
 		<div id="AstroTaches">
 			<img src="examples/HSTJ135754_29-311509_1_sci.jpg">
+		
+			<div id="AstroTaches-Tools">			
+				<a href="javascript:scribble.eraser=true">erase</a>
+				<a href="javascript:scribble.eraser=false">paint</a>
+			</div>
+			
 		</div>
+
+		
 	</div>
 	
 	<div id="clear">
-<?php
-//Footer
-echo "This is the Footer<br>";
 
-?>
+	<div id="footer">
+		This is the Footer
+	</div>
+  </div>

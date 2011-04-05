@@ -1,35 +1,127 @@
+/* 
+Blue:
+	Dark:  		#657f4b
+	Middle:		#Accc8d
+	Light:		#E4FFCA
+Blue:
+	Dark:		#375C7F
+	Light:		#91B1CC
+	
+	OR-------------------
+
+Blue-Green
+	Dark:		#004f59
+	middle:		#008A9C
+	bright:		#00E2FF
+	light:		#C1F7FF
+Orange
+	Dark:		#E38434
+	Medium:		#FFAC65
+	light:		#FFD9BA
+
+*/
+
+/* Set Backgrounds */
 body {
 	background: #000;
-	color: #DAEAFF;
+	width: 1400px;
+	color: #C1F7FF;
 }
 
-* {
-	padding: 0;
-	margin: 0;
+#container {
+	margin: 0 auto 0 auto;
+	width: 1080px;
+}
+
+#header {
+	background: #004F59;
+	width: 800px;
+	height: 80px;
+	padding: 10px;
+}
+
+#logo {
+	background: #FFF;
+	width: 410px;
+	padding: 5px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 5px 5px 15px #000;
+	-webkit-box-shadow: 5px 5px 15px #000;
+	box-shadow: 5px 5px 15px #000;
+}
+
+#main, #sidebar {
+	float: left;
+	height: 410px;
+	padding: 10px;
+}
+
+#main {
+	background: #C1F7FF;
+	float: left;
+	width: 530px;
+}
+
+#sidebar {
+	background: #008A9C;
+	float: left;
+	width: 250px;
+}
+
+#footer {
+	background: #004F59;
+	color: #000;
+	width: 800px;
+	padding: 10px;
 }
 
 a {
-	color: #FFF0D1;
+	color: #FFD9BA;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid #FFD9BA;
+}
+
+/* Set everything else */
+* {
+	padding: 0;
+	margin: 0;
 }
 
 #clear {
 	clear:both;
 }
 
-#header {
-	background: #32456E;
-	width: 100%;
-	height: 100px;
-	padding: 10px;
+#AstroTaches {
+	float: left;
+	height: 402px;
+	width: 472px;
+	padding: 5px;
+	margin: 0 10px 0 0;
 }
 
-#sidebar {
+#AstroTaches img{
 	float: left;
-	width: 250px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
-#main {
-	float: left;
-	background: #D94F00;
-	width: 800px;
+#AstroTaches-Tools {
+	float: right;
+	background: #008A9C;
+	color: #000;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 392px;
+	width: 60px;
+	padding: 5px;
 }
+
+#AstroTaches-Tools a {
+	color: #000;
+}
+
+
