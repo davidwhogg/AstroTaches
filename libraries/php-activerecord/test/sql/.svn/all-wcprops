@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql
+END
+sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/sqlite.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/mysql.sql
+END
+pgsql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/pgsql.sql
+END
+oci.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/oci.sql
+END
+pgsql-after-fixtures.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/pgsql-after-fixtures.sql
+END
+oci-after-fixtures.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/sql/oci-after-fixtures.sql
+END

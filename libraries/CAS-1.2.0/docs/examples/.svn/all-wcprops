@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples
+END
+example_custom_urls.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_custom_urls.php
+END
+example_file.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_file.php
+END
+example_service.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_service.php
+END
+example_gateway.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_gateway.php
+END
+example_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_lang.php
+END
+example_proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_proxy.php
+END
+example_proxy2.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_proxy2.php
+END
+example_session_service.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_session_service.php
+END
+example_html.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_html.php
+END
+example_session_proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_session_proxy.php
+END
+example_logout.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_logout.php
+END
+example_simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/CAS-1.2.0/docs/examples/example_simple.php
+END

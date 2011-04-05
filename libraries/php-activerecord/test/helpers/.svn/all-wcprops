@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers
+END
+DatabaseLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers/DatabaseLoader.php
+END
+SnakeCase_PHPUnit_Framework_TestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers/SnakeCase_PHPUnit_Framework_TestCase.php
+END
+AdapterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers/AdapterTest.php
+END
+DatabaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers/DatabaseTest.php
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/helpers/config.php
+END

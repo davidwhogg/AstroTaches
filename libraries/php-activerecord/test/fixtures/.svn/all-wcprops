@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures
+END
+authors.csv
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/authors.csv
+END
+venues.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/venues.csv
+END
+positions.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/positions.csv
+END
+books.csv
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/books.csv
+END
+amenities.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/amenities.csv
+END
+hosts.csv
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/hosts.csv
+END
+employees.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/employees.csv
+END
+property_amenities.csv
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/property_amenities.csv
+END
+awesome_people.csv
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/awesome_people.csv
+END
+events.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/events.csv
+END
+property.csv
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/property.csv
+END
+rm-bldg.csv
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/test/fixtures/rm-bldg.csv
+END

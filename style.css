@@ -1,0 +1,35 @@
+body {
+	background: #000;
+	color: #DAEAFF;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #FFF0D1;
+}
+
+#clear {
+	clear:both;
+}
+
+#header {
+	background: #32456E;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+
+#sidebar {
+	float: left;
+	width: 250px;
+}
+
+#main {
+	float: left;
+	background: #D94F00;
+	width: 800px;
+}

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib
+END
+ConnectionManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/ConnectionManager.php
+END
+DateTime.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/DateTime.php
+END
+CallBack.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/CallBack.php
+END
+Column.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Column.php
+END
+Connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Connection.php
+END
+Model.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Model.php
+END
+Utils.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Utils.php
+END
+Relationship.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Relationship.php
+END
+Singleton.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Singleton.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Config.php
+END
+SQLBuilder.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/SQLBuilder.php
+END
+Serialization.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Serialization.php
+END
+Reflections.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Reflections.php
+END
+Validations.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Validations.php
+END
+Exceptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Exceptions.php
+END
+Expressions.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Expressions.php
+END
+Inflector.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Inflector.php
+END
+Table.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/php-activerecord/lib/Table.php
+END

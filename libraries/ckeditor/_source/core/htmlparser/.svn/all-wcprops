@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser
+END
+text.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/text.js
+END
+filter.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/filter.js
+END
+element.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/element.js
+END
+cdata.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/cdata.js
+END
+basicwriter.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/basicwriter.js
+END
+comment.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/comment.js
+END
+fragment.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/zoobuilder/!svn/ver/2/trunk/admin/libraries/ckeditor/_source/core/htmlparser/fragment.js
+END
