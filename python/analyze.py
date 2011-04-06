@@ -89,6 +89,20 @@ def analyze(argv):
   
   # Query database for painting image strings:
   
+  host = 'localhost'
+
+  user = ''
+  password = ''
+
+  conn = MySQLdb.Connection(db=database, host=host, user=user, passwd=password)
+  mysql = conn.cursor()
+
+  sql = """ select * from annotations %s """ % table
+  mysql.execute(sql)
+  fields = mysql.fetchall()
+
+  mysql.close()
+  conn.close()
   
   # --------------------------------------------------------------------
 
