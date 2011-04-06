@@ -20,7 +20,6 @@
 # Resize jpg:
 convert -scale 200% examples/HSTJ135754_29-311509_1_sci.jpg test.jpg
 
-
 # # Instruction text:
 # 
 # Paint over the blue features in this image:
@@ -30,7 +29,18 @@ convert -scale 200% examples/HSTJ135754_29-311509_1_sci.jpg test.jpg
 # Created at <a href="http://dotastronomy.com/2011-conference">Dot Astronomy
 # 3</a>, Oxford, April 2011. Unmodelled HST gravitational lens test image from
 # Marshall et al, in preparation. Source code visible at <a
-# href="https://github.com/hogghogg/AstroTaches">GitHub</a>.
-# 
+# href="https://github.com/hogghogg/AstroTaches">GitHub</a>. 
+
+# load mysql database
+sudo /usr/local/mysql/bin/mysqld_safe # start daemon
+# ctrl-z and then "bg"
+sudo /usr/local/mysql/bin/mysql
+# create database astrotaches;
+sudo /usr/local/mysql/bin/mysql astrotaches
+# grant ALL on * to ''@'localhost';
+/usr/local/mysql/bin/mysql astrotaches < astrotaches_2011-04-05.sql
+/usr/local/mysql/bin/mysql astrotaches
+# select * from annotations;
+
 # ============================================================================
 FINISH:

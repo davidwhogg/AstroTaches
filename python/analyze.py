@@ -97,18 +97,18 @@ def analyze(argv):
   conn = MySQLdb.Connection(db=database, host=host, user=user, passwd=password)
   mysql = conn.cursor()
 
-  sql = """ select * from annotations %s """ % table
+  sql = r"select * from annotations"
   mysql.execute(sql)
   fields = mysql.fetchall()
 
   mysql.close()
   conn.close()
+
+  print fields
   
   # --------------------------------------------------------------------
 
   # Reformat array of strings into portfolio of paintings:
-
-  
 
 
   # --------------------------------------------------------------------
