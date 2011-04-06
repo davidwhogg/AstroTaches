@@ -1,0 +1,6 @@
+# Region file format: DS9 version 4.1
+# Filename: /Users/pjm/work/stronglensing/GalaxyZoo/AstroTaches/examples/HSTJ135754.29-311509.1_F475W_sci_moffatdiff.fits
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+image
+# text(99.562528,188.63176) color=black font="helvetica 20 bold roman" text={Human-painted Features}
+box(100.25,100.75,200.5,199.5,0) # color=black width=3
