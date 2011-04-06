@@ -30,6 +30,7 @@ def analyze(argv):
 
   INPUTS
           database     Name of SQL database containing painting image strings
+          refimage     Reference image for FITS header
 
   OPTIONAL INPUTS
           
@@ -59,8 +60,8 @@ def analyze(argv):
       print USAGE
       return
 
-  output = 'noisy.fits'
-  weight = 'weight.fits'
+  meanfile = 'mean.fits'
+  weightfile = 'weight.fits'
   sky = 0
   vb = False
   for o,a in opts:
@@ -72,62 +73,69 @@ def analyze(argv):
       else:
           assert False, "unhandled option"
    
-  if len(args) == 2 :
-      sky =  float(args[0])
-      input = args[1]
-      if vb: print "Adding sky background of ",sky,"e- to image in",input
-  else :
+  if len(args) != 2 :
       print USAGE
       return
+  else :
+      database = args[0]
+      refimage = args[1]
+      if vb: print "Analyzing paintings in",database
 
   # --------------------------------------------------------------------
 
+  # Image is of size nx x ny:
+  nx = 400
+  ny = 400
+  
   # Query database for painting image strings:
   
   
-  
   # --------------------------------------------------------------------
+
+  # Reformat array of strings into portfolio of paintings:
+
+  
+
+
+  # --------------------------------------------------------------------
+
+  # Make mean and weight images:
+
+  sum = numpy.zeros(nx,ny)
+  sumsq = numpy.zeros(nx,ny)
+  mean = numpy.zeros(nx,ny)
+  wht = numpy.zeros(nx,ny)
+  if vb: print "Generating mean and weight image..."
+
+  for i in range(Np):
+    sum += portfolio[i]
+    sumsq += portfolio[i]*portfolio[i]
+  
+  mean = sum/float(Np)
+  wht = sumsq/float(Np) - sum*mean
+  wht = 1.0/wht
+
+  # --------------------------------------------------------------------
+
+  # Write out mean and error images with same header, from 
+  # machine version.
 
   # Read in image data and header:
 
-  hdulist = pyfits.open(input)
+  hdulist = pyfits.open(refimage)
   hdr = hdulist[0].header
-  image = hdulist[0].data
   hdulist.close()
+  if vb: print "Read in reference image from ",refimage
 
-  if vb: print "Read in image from ",input
+  if vb: print "Writing mean image to ",meanfile
 
-  # --------------------------------------------------------------------
-
-  # Generate noise realisation and add to image:
-
-  if vb: print "Generating noise realisation..."
-
-  rms = numpy.sqrt(image + sky)
-  noise = rms*numpy.random.randn(rms.shape[0],rms.shape[1])
-  dirtyimage = image + noise
-
-  # --------------------------------------------------------------------
-
-  # Make weight image:
-
-  if vb: print "Generating weight image..."
-
-  wht = 1.0/(rms*rms)
-
-  # --------------------------------------------------------------------
-
-  # Write out noisy and weight images with same header:
-
-  if vb: print "Writing noisy image to ",output
-
-  if os.path.exists(output): os.remove(output) 
-  pyfits.writeto(output,dirtyimage,hdr)
+  if os.path.exists(meanfile): os.remove(meanfile) 
+  pyfits.writeto(meanfile,mean,hdr)
 
   if vb: print "Writing weight image to ",weight
 
-  if os.path.exists(weight): os.remove(weight) 
-  pyfits.writeto(weight,wht,hdr)
+  if os.path.exists(weightfile): os.remove(weightfile) 
+  pyfits.writeto(weightfile,wht,hdr)
 
   # --------------------------------------------------------------------
 
