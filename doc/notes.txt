@@ -21,16 +21,16 @@
 convert -scale 200% examples/HSTJ135754_29-311509_1_sci.jpg test.jpg
 
 
-# Instruction text:
-
-Paint over the blue features in this image:
-
-# Footer text:
-
-Created at <a href="http://dotastronomy.com/2011-conference">Dot Astronomy
-3</a>, Oxford, April 2011. Unmodelled HST gravitational lens test image from
-Marshall et al, in preparation. Source code visible at <a
-href="https://github.com/hogghogg/AstroTaches">GitHub</a>.
-
+# # Instruction text:
+# 
+# Paint over the blue features in this image:
+# 
+# # Footer text:
+# 
+# Created at <a href="http://dotastronomy.com/2011-conference">Dot Astronomy
+# 3</a>, Oxford, April 2011. Unmodelled HST gravitational lens test image from
+# Marshall et al, in preparation. Source code visible at <a
+# href="https://github.com/hogghogg/AstroTaches">GitHub</a>.
+# 
 # ============================================================================
 FINISH:
