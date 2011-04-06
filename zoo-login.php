@@ -21,10 +21,6 @@
 	$attr = phpCAS::getAttributes();
 
 	$id = $attr['id'];
-		
-   // Set time. This get's used a lot
-	$time = new DateTime(null, new DateTimeZone('America/Chicago'));
-	$time = date_format($time, 'Y-m-d H:i:s');
 
    // Set Public Cookie
    // Step 1: Make sure cookies can be setup
