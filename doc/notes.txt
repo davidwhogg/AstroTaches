@@ -41,6 +41,10 @@ sudo /usr/local/mysql/bin/mysql astrotaches
 /usr/local/mysql/bin/mysql astrotaches < astrotaches_2011-04-05.sql
 /usr/local/mysql/bin/mysql astrotaches
 # select * from annotations;
+# ============================================================================
+# 2011-04-20 (Wednesday) 13:57 BST
 
+# Edited paper to reflect plans made with Chris Lintott, in response to Hogg's
+# prompt. No reply from LSST interesting galaxies people... Test images?
 # ============================================================================
 FINISH:

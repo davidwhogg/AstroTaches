@@ -91,15 +91,21 @@ $^{5}$AstroSphere, USA}
 \begin{abstract}
 
 Astronomical images can be complex, with the interesting features often
-appearing at low signal to noise, or blended with other objects. Automated
+appearing at low signal to noise, and/or blended with other objects. Automated
 methods for feature detection and deblending can fail if they are applied to
 systems with unexpected features. In contrast,  human inspectors seem to learn
-quickly what features are interesting, and identify them in confusing images.
-In this work we investigate a web-based tool for ``painting'' over features in
-astronomical images, and ask how useful these paintings are at summarising
-interesting features. Specifically, we gathered, from members of the Galaxy
-Zoo online user community, N paintings of the blue features in an HST image of
-a gravitational lens. In a simple analysis of these paintings, we find...
+quickly what features are interesting, and can identify them even in confusing
+images. In this work we investigate a web-based ``paint'' tool for
+highlighting features in astronomical images, and ask how quantitatively
+useful these paintings, or ``taches'' are at summarising interesting objects.
+For our test images we focus on gravitational lens arcs and tidal tails from
+merging objects, where we have higher resolution and signal to noise reference
+images for comparison with the taches. We introduce the test images to the
+user with short set of instructions. Using a test dataset of N taches painted
+by X members of the Galaxy Zoo online user community, we explore the impact of
+the format of the instructions, the flexibility of the interface, and the
+Zoo experience of the painters on the recovery of the reference images. We
+find that...
 
 \end{abstract}
 
@@ -113,12 +119,46 @@ gravitational lensing --- surveys --- cosmology: observations
 
 \section{Introduction}
 
+Discovery in astronomy: interesting features in images. Examples.
+
+Generic problem of how to describe new features. Annotated images is industry
+standard but in diagrammatic way. Annotation facilitates discussion, and adds
+value to the image. 
+
+Discussion problem brought into focus by citizen science projects: untrained
+classifiers are excellent at spotting new and interesting features in images,
+but need the tools to describe them. Forum failures.  One next step in
+annotation is more accurate highlighting of features, to facilitate
+discussion.
+
+Feature highlighting automatically done by object detection algorithms that
+make segmentation maps, eg SExtractor. Automatic detection does have problems
+though. 1) Low signal to noise features. Filtering to bring out features, but
+hard to optimise if you don't know what you are looking for. 2) Faint features
+in high dynamic range images. Hard to tune object detectors for extended
+objects. 3) Blended features. Special case of faint object problem - locally
+faint. Colour helps, hard to link channels without model, which needs to be
+free form to cope with range of features. 
+
+Can manual highlighting of features in images provide useful information?
+Paint tools eg photoshop allow free-form overlays to be created: these
+overlays, which we dub ``taches,'' are potentially highly informative,
+allowing the features to be discussed very efficiently. Can taches be
+quantitatively useful? Individual taches as personally-optimised ``enhance''
+filter. Can these increase detection significance by injecting more
+information? Enable image deconvolution? Improve deblending by mental
+model-based interpolation? Stacking taches - weighting schemes, effects.
+Usefulness, as summary image for further analysis, or mask to facilitate pixel
+modelling. 
+
+This work: build online tool for manual image annotation, and collect large
+numbers of ``taches'' from users to answer these questions. 
+
 
 %-------------------------------------------------------------------------------
 
 \section{The AstroTaches Interface}
 \label{sect:interface}
-
 
 
 %-------------------------------------------------------------------------------
