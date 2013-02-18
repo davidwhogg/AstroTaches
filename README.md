@@ -1,4 +1,4 @@
-Welcome to AstroTaches.
+Welcome to AstroTaches. AstroTaches is dead. Long live [SpaceWarps](http://drphilmarshall.github.com/SpaceWarps/).
 
 Author team:
   Pamela L. Gay (Astrosphere)
